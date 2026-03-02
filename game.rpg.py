@@ -73,3 +73,15 @@ def skill_fireball(self, lawan):
             lawan.diserang(self.attack_power * 2) # Damage 2x lipat 
         else: 
             print(f"{self.name} skill failed! Not Enough Mana.")
+
+print("\n--- Pertarungan Dimulai ---")
+# -- Main Program --
+# Membuat Object (Instansiasi)
+hero1 = Frontliner("Prabowo")
+hero2 = Mage("Balmond")
+# Memanggil Method
+hero1.info()
+hero2.info()
+hero1.attack_target(hero2) # Layla menyerang Zilong
+hero1.info()
+hero2.info()
